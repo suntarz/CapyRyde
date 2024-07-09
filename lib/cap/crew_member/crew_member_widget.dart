@@ -706,8 +706,13 @@ class _CrewMemberWidgetState extends State<CrewMemberWidget> {
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .accent1,
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
+                                            borderRadius: const BorderRadius.only(
+                                              bottomLeft: Radius.circular(10.0),
+                                              bottomRight:
+                                                  Radius.circular(10.0),
+                                              topLeft: Radius.circular(10.0),
+                                              topRight: Radius.circular(10.0),
+                                            ),
                                             border: Border.all(
                                               color:
                                                   FlutterFlowTheme.of(context)
@@ -903,8 +908,13 @@ class _CrewMemberWidgetState extends State<CrewMemberWidget> {
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .accent1,
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
+                                            borderRadius: const BorderRadius.only(
+                                              bottomLeft: Radius.circular(10.0),
+                                              bottomRight:
+                                                  Radius.circular(10.0),
+                                              topLeft: Radius.circular(10.0),
+                                              topRight: Radius.circular(10.0),
+                                            ),
                                             border: Border.all(
                                               color:
                                                   FlutterFlowTheme.of(context)
