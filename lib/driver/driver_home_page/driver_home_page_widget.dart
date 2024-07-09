@@ -31,6 +31,7 @@ class _DriverHomePageWidgetState extends State<DriverHomePageWidget> {
   @override
   void dispose() {
     _model.dispose();
+
     super.dispose();
   }
 
@@ -74,8 +75,8 @@ class _DriverHomePageWidgetState extends State<DriverHomePageWidget> {
                   color: Color(0xFF57636C),
                   size: 24.0,
                 ),
-                onPressed: () {
-                  print('IconButton pressed ...');
+                onPressed: () async {
+                  context.safePop();
                 },
               ),
             ),
@@ -87,7 +88,7 @@ class _DriverHomePageWidgetState extends State<DriverHomePageWidget> {
           top: true,
           child: SingleChildScrollView(
             child: Column(
-              mainAxisSize: MainAxisSize.min,
+              mainAxisSize: MainAxisSize.min, // Set mainAxisSize to min
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
@@ -187,18 +188,21 @@ class _DriverHomePageWidgetState extends State<DriverHomePageWidget> {
                         ),
                   ),
                 ),
-                Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
-                  child: Text(
-                    'Your feet:  Khet Bangkok Yai',
-                    style: FlutterFlowTheme.of(context).labelLarge.override(
-                          fontFamily: 'Outfit',
-                          color: Color(0xFF57636C),
-                          fontSize: 16.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.w500,
-                        ),
+                Flexible(
+                  fit: FlexFit.loose, // Use FlexFit.loose
+                  child: Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
+                    child: Text(
+                      'Your feet:  Khet Bangkok Yai',
+                      style: FlutterFlowTheme.of(context).labelLarge.override(
+                            fontFamily: 'Outfit',
+                            color: Color(0xFF57636C),
+                            fontSize: 16.0,
+                            letterSpacing: 0.0,
+                            fontWeight: FontWeight.w500,
+                          ),
+                    ),
                   ),
                 ),
                 Padding(
@@ -258,18 +262,21 @@ class _DriverHomePageWidgetState extends State<DriverHomePageWidget> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
-                  child: Text(
-                    'license plate: 1ABC-123',
-                    style: FlutterFlowTheme.of(context).labelLarge.override(
-                          fontFamily: 'Outfit',
-                          color: Color(0xFF57636C),
-                          fontSize: 16.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.w500,
-                        ),
+                Flexible(
+                  fit: FlexFit.loose, // Use FlexFit.loose
+                  child: Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
+                    child: Text(
+                      'license plate: 1ABC-123',
+                      style: FlutterFlowTheme.of(context).labelLarge.override(
+                            fontFamily: 'Outfit',
+                            color: Color(0xFF57636C),
+                            fontSize: 16.0,
+                            letterSpacing: 0.0,
+                            fontWeight: FontWeight.w500,
+                          ),
+                    ),
                   ),
                 ),
                 Row(

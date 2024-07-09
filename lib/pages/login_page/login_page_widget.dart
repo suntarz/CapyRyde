@@ -105,7 +105,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 Align(
                                   alignment: AlignmentDirectional(-1.0, 0.0),
                                   child: Text(
-                                    'Welcome Back',
+                                    'Welcome back',
                                     style: FlutterFlowTheme.of(context)
                                         .displaySmall
                                         .override(
