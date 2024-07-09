@@ -115,6 +115,7 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget>
                 child: Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(20.0, 8.0, 20.0, 0.0),
                   child: SingleChildScrollView(
+                    primary: false,
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,

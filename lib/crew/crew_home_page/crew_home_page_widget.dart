@@ -31,7 +31,6 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
   @override
   void dispose() {
     _model.dispose();
-
     super.dispose();
   }
 
@@ -88,64 +87,44 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
           child: SingleChildScrollView(
             primary: false,
             child: Column(
-              mainAxisSize: MainAxisSize.max,
+              mainAxisSize: MainAxisSize.min, // Adjust the main axis size
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Flexible(
-                  child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              16.0, 12.0, 0.0, 0.0),
-                          child: Text(
-                            'Welcome ',
-                            style: FlutterFlowTheme.of(context)
-                                .displaySmall
-                                .override(
-                                  fontFamily: 'Outfit',
-                                  color: Color(0xFF0F1113),
-                                  fontSize: 24.0,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              5.0, 12.0, 0.0, 0.0),
-                          child: Text(
-                            'Gibbs',
-                            style: FlutterFlowTheme.of(context)
-                                .displaySmall
-                                .override(
-                                  fontFamily: 'Outfit',
-                                  color: Color(0xFFD89D12),
-                                  fontSize: 24.0,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                          ),
-                        ),
-                        Flexible(
-                          child: Align(
-                            alignment: AlignmentDirectional(1.0, 0.0),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 28.0, 0.0),
-                              child: Icon(
-                                Icons.settings_outlined,
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                size: 24.0,
-                              ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Text(
+                        'Welcome ',
+                        style: FlutterFlowTheme.of(context).displaySmall.override(
+                              fontFamily: 'Outfit',
+                              color: Color(0xFF0F1113),
+                              fontSize: 24.0,
+                              letterSpacing: 0.0,
+                              fontWeight: FontWeight.bold,
                             ),
-                          ),
+                      ),
+                      Text(
+                        'Gibbs',
+                        style: FlutterFlowTheme.of(context).displaySmall.override(
+                              fontFamily: 'Outfit',
+                              color: Color(0xFFD89D12),
+                              fontSize: 24.0,
+                              letterSpacing: 0.0,
+                              fontWeight: FontWeight.w500,
+                            ),
+                      ),
+                      Spacer(), // Use Spacer to push the settings icon to the end
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 28.0, 0.0),
+                        child: Icon(
+                          Icons.settings_outlined,
+                          color: FlutterFlowTheme.of(context).secondaryText,
+                          size: 24.0,
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
                 Padding(
@@ -160,37 +139,31 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                     ),
                   ),
                 ),
-                Flexible(
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                   child: Align(
                     alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                      child: Text(
-                        'Your feet : Khet Phasi Charoen',
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Readex Pro',
-                              color: Colors.black,
-                              letterSpacing: 0.0,
-                            ),
-                      ),
+                    child: Text(
+                      'Your feet : Khet Phasi Charoen',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Readex Pro',
+                            color: Colors.black,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                   ),
                 ),
-                Flexible(
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                   child: Align(
                     alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                      child: Text(
-                        'The nearby bus',
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Readex Pro',
-                              color: Colors.black,
-                              letterSpacing: 0.0,
-                            ),
-                      ),
+                    child: Text(
+                      'The nearby bus',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Readex Pro',
+                            color: Colors.black,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                   ),
                 ),
@@ -330,7 +303,7 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                         child: Column(
-                          mainAxisSize: MainAxisSize.max,
+                          mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [

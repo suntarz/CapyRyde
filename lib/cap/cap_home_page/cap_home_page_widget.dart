@@ -36,7 +36,8 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
     super.initState();
     _model = createModel(context, () => CapHomePageModel());
 
-    // On page load action.
+    // Remove or comment out the bottom sheet trigger
+    /*
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       await showModalBottomSheet(
         isScrollControlled: true,
@@ -56,6 +57,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
         },
       ).then((value) => safeSetState(() {}));
     });
+    */
 
     animationsMap.addAll({
       'containerOnPageLoadAnimation1': AnimationInfo(
@@ -253,8 +255,8 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                   color: Color(0xFF57636C),
                   size: 24.0,
                 ),
-                onPressed: () {
-                  print('IconButton pressed ...');
+                onPressed: () async {
+                  context.safePop();
                 },
               ),
             ),
@@ -289,26 +291,21 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                             ),
                       ),
                     ),
-                    Flexible(
-                      child: Align(
-                        alignment: AlignmentDirectional(1.0, -1.0),
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 28.0, 0.0),
-                          child: InkWell(
-                            splashColor: Colors.transparent,
-                            focusColor: Colors.transparent,
-                            hoverColor: Colors.transparent,
-                            highlightColor: Colors.transparent,
-                            onTap: () async {
-                              context.pushNamed('editProfile');
-                            },
-                            child: Icon(
-                              Icons.settings_outlined,
-                              color: FlutterFlowTheme.of(context).secondaryText,
-                              size: 24.0,
-                            ),
-                          ),
+                    Spacer(), // Use Spacer to push the settings icon to the end
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 28.0, 0.0),
+                      child: InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed('editProfile');
+                        },
+                        child: Icon(
+                          Icons.settings_outlined,
+                          color: FlutterFlowTheme.of(context).secondaryText,
+                          size: 24.0,
                         ),
                       ),
                     ),
@@ -477,7 +474,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                       0.0, 0.0, 0.0, 0.0),
                                   iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0xFF827AE1),
+                                                                    color: Color(0xFF827AE1),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
