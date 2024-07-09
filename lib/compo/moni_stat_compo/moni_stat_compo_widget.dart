@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'moni_stat_compo_model.dart';
 export 'moni_stat_compo_model.dart';
 
@@ -38,17 +36,17 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Container(
           width: double.infinity,
-          constraints: BoxConstraints(
+          constraints: const BoxConstraints(
             maxWidth: 1170.0,
           ),
           decoration: BoxDecoration(
             color: Colors.white,
-            boxShadow: [
+            boxShadow: const [
               BoxShadow(
                 blurRadius: 3.0,
                 color: Color(0x33000000),
@@ -60,22 +58,22 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
             ],
             borderRadius: BorderRadius.circular(8.0),
             border: Border.all(
-              color: Color(0xFFE0E3E7),
+              color: const Color(0xFFE0E3E7),
               width: 1.0,
             ),
           ),
           child: Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 40.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0xFFF1F4F8),
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(0.0),
@@ -86,7 +84,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                     ),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -103,7 +101,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                     .bodySmall
                                     .override(
                                       fontFamily: 'Readex Pro',
-                                      color: Color(0xFF14181B),
+                                      color: const Color(0xFF14181B),
                                       fontSize: 12.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
@@ -118,7 +116,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                   .bodySmall
                                   .override(
                                     fontFamily: 'Readex Pro',
-                                    color: Color(0xFF14181B),
+                                    color: const Color(0xFF14181B),
                                     fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
@@ -137,7 +135,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                     .bodySmall
                                     .override(
                                       fontFamily: 'Readex Pro',
-                                      color: Color(0xFF14181B),
+                                      color: const Color(0xFF14181B),
                                       fontSize: 12.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
@@ -151,7 +149,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                   .bodySmall
                                   .override(
                                     fontFamily: 'Readex Pro',
-                                    color: Color(0xFF14181B),
+                                    color: const Color(0xFF14181B),
                                     fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
@@ -170,10 +168,10 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
                       child: Container(
                         width: 100.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
@@ -187,7 +185,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                           ],
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -205,7 +203,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Readex Pro',
-                                          color: Color(0xFF14181B),
+                                          color: const Color(0xFF14181B),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -215,13 +213,13 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                               Expanded(
                                 flex: 4,
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 8.0, 12.0, 8.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 8.0, 0.0),
                                         child: ClipRRect(
                                           borderRadius:
@@ -237,7 +235,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   4.0, 0.0, 0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -253,7 +251,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                                     .bodyMedium
                                                     .override(
                                                       fontFamily: 'Readex Pro',
-                                                      color: Color(0xFF14181B),
+                                                      color: const Color(0xFF14181B),
                                                       fontSize: 14.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -261,7 +259,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                                     ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 4.0, 0.0, 0.0),
                                                 child: Text(
@@ -273,7 +271,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                                         fontFamily:
                                                             'Readex Pro',
                                                         color:
-                                                            Color(0xFF4B39EF),
+                                                            const Color(0xFF4B39EF),
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -301,7 +299,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Readex Pro',
-                                          color: Color(0xFF14181B),
+                                          color: const Color(0xFF14181B),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -315,13 +313,13 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                     Container(
                                       height: 32.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFF1F4F8),
+                                        color: const Color(0xFFF1F4F8),
                                         borderRadius:
                                             BorderRadius.circular(40.0),
                                       ),
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 12.0, 0.0),
                                         child: Text(
                                           '23',
@@ -329,7 +327,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Readex Pro',
-                                                color: Color(0xFF14181B),
+                                                color: const Color(0xFF14181B),
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.normal,
@@ -347,10 +345,10 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
                       child: Container(
                         width: 100.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
@@ -364,7 +362,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                           ],
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -382,7 +380,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Readex Pro',
-                                          color: Color(0xFF14181B),
+                                          color: const Color(0xFF14181B),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -392,13 +390,13 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                               Expanded(
                                 flex: 4,
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 8.0, 12.0, 8.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 8.0, 0.0),
                                         child: ClipRRect(
                                           borderRadius:
@@ -414,7 +412,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   4.0, 0.0, 0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -430,7 +428,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                                     .bodyMedium
                                                     .override(
                                                       fontFamily: 'Readex Pro',
-                                                      color: Color(0xFF14181B),
+                                                      color: const Color(0xFF14181B),
                                                       fontSize: 14.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -438,7 +436,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                                     ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 4.0, 0.0, 0.0),
                                                 child: Text(
@@ -450,7 +448,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                                         fontFamily:
                                                             'Readex Pro',
                                                         color:
-                                                            Color(0xFF4B39EF),
+                                                            const Color(0xFF4B39EF),
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -478,7 +476,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Readex Pro',
-                                          color: Color(0xFF14181B),
+                                          color: const Color(0xFF14181B),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -492,13 +490,13 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                     Container(
                                       height: 32.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFF1F4F8),
+                                        color: const Color(0xFFF1F4F8),
                                         borderRadius:
                                             BorderRadius.circular(40.0),
                                       ),
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 12.0, 0.0),
                                         child: Text(
                                           '10',
@@ -506,7 +504,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Readex Pro',
-                                                color: Color(0xFF14181B),
+                                                color: const Color(0xFF14181B),
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.normal,
@@ -524,10 +522,10 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
                       child: Container(
                         width: 100.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
@@ -541,7 +539,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                           ],
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -559,7 +557,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Readex Pro',
-                                          color: Color(0xFF14181B),
+                                          color: const Color(0xFF14181B),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -569,13 +567,13 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                               Expanded(
                                 flex: 4,
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 8.0, 12.0, 8.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 8.0, 0.0),
                                         child: ClipRRect(
                                           borderRadius:
@@ -591,7 +589,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   4.0, 0.0, 0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -607,7 +605,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                                     .bodyMedium
                                                     .override(
                                                       fontFamily: 'Readex Pro',
-                                                      color: Color(0xFF14181B),
+                                                      color: const Color(0xFF14181B),
                                                       fontSize: 14.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -615,7 +613,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                                     ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 4.0, 0.0, 0.0),
                                                 child: Text(
@@ -627,7 +625,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                                         fontFamily:
                                                             'Readex Pro',
                                                         color:
-                                                            Color(0xFF4B39EF),
+                                                            const Color(0xFF4B39EF),
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -655,7 +653,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Readex Pro',
-                                          color: Color(0xFF14181B),
+                                          color: const Color(0xFF14181B),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -669,13 +667,13 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                     Container(
                                       height: 32.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFF1F4F8),
+                                        color: const Color(0xFFF1F4F8),
                                         borderRadius:
                                             BorderRadius.circular(40.0),
                                       ),
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 12.0, 0.0),
                                         child: Text(
                                           '12',
@@ -683,7 +681,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Readex Pro',
-                                                color: Color(0xFF14181B),
+                                                color: const Color(0xFF14181B),
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.normal,

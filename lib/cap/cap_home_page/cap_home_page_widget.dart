@@ -5,14 +5,11 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:provider/provider.dart';
 import 'cap_home_page_model.dart';
 export 'cap_home_page_model.dart';
 
@@ -36,8 +33,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
     super.initState();
     _model = createModel(context, () => CapHomePageModel());
 
-    // Remove or comment out the bottom sheet trigger
-    /*
+    // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       await showModalBottomSheet(
         isScrollControlled: true,
@@ -51,13 +47,12 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                 : FocusScope.of(context).unfocus(),
             child: Padding(
               padding: MediaQuery.viewInsetsOf(context),
-              child: BottomSheetWidget(),
+              child: const BottomSheetWidget(),
             ),
           );
         },
       ).then((value) => safeSetState(() {}));
     });
-    */
 
     animationsMap.addAll({
       'containerOnPageLoadAnimation1': AnimationInfo(
@@ -74,15 +69,15 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 40.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 40.0),
+            end: const Offset(0.0, 0.0),
           ),
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.8, 0.8),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.8, 0.8),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -100,8 +95,8 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(30.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(30.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -119,8 +114,8 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(70.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(70.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -138,8 +133,8 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(70.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(70.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -157,8 +152,8 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(70.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(70.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -176,8 +171,8 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(70.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(70.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -195,8 +190,8 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(30.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(30.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -226,15 +221,15 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFFF1F5F8),
+          backgroundColor: const Color(0xFFF1F5F8),
           automaticallyImplyLeading: false,
           title: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
             child: Text(
               'Captian Home Page',
               style: FlutterFlowTheme.of(context).labelMedium.override(
                     fontFamily: 'Plus Jakarta Sans',
-                    color: Color(0xFF57636C),
+                    color: const Color(0xFF57636C),
                     fontSize: 14.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.w500,
@@ -243,14 +238,14 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
           ),
           actions: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 16.0, 0.0),
               child: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 50.0,
-                fillColor: Color(0xFFF1F5F8),
-                icon: Icon(
+                fillColor: const Color(0xFFF1F5F8),
+                icon: const Icon(
                   Icons.notifications_none,
                   color: Color(0xFF57636C),
                   size: 24.0,
@@ -277,35 +272,40 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 0.0, 0.0),
                       child: Text(
                         'Welcome Captian Rogers',
                         style: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .override(
                               fontFamily: 'Outfit',
-                              color: Color(0xFF0F1113),
+                              color: const Color(0xFF0F1113),
                               fontSize: 24.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w500,
                             ),
                       ),
                     ),
-                    Spacer(), // Use Spacer to push the settings icon to the end
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 28.0, 0.0),
-                      child: InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          context.pushNamed('editProfile');
-                        },
-                        child: Icon(
-                          Icons.settings_outlined,
-                          color: FlutterFlowTheme.of(context).secondaryText,
-                          size: 24.0,
+                    Flexible(
+                      child: Align(
+                        alignment: const AlignmentDirectional(1.0, -1.0),
+                        child: Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 28.0, 0.0),
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context.pushNamed('editProfile');
+                            },
+                            child: Icon(
+                              Icons.settings_outlined,
+                              color: FlutterFlowTheme.of(context).secondaryText,
+                              size: 24.0,
+                            ),
+                          ),
                         ),
                       ),
                     ),
@@ -313,7 +313,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 230.0,
@@ -325,7 +325,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                           'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhY2hlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
                         ).image,
                       ),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           blurRadius: 4.0,
                           color: Color(0x250F1113),
@@ -341,7 +341,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                       width: 100.0,
                       height: 100.0,
                       decoration: BoxDecoration(
-                        color: Color(0x430F1113),
+                        color: const Color(0x430F1113),
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: Image.network(
@@ -351,7 +351,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                         borderRadius: BorderRadius.circular(12.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 12.0, 12.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -359,7 +359,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 70.0, 0.0),
                               child: Text(
                                 'Approve Driver List',
@@ -375,7 +375,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 16.0, 0.0, 0.0),
                               child: Text(
                                 'Who is Request?',
@@ -391,13 +391,13 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 8.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.all(2.0),
+                                    padding: const EdgeInsets.all(2.0),
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(50.0),
                                       child: Image.network(
@@ -409,7 +409,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.all(2.0),
+                                    padding: const EdgeInsets.all(2.0),
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(50.0),
                                       child: Image.network(
@@ -421,7 +421,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.all(2.0),
+                                    padding: const EdgeInsets.all(2.0),
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(50.0),
                                       child: Image.network(
@@ -433,7 +433,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.all(2.0),
+                                    padding: const EdgeInsets.all(2.0),
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(50.0),
                                       child: Image.network(
@@ -445,7 +445,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.all(2.0),
+                                    padding: const EdgeInsets.all(2.0),
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(50.0),
                                       child: Image.network(
@@ -460,7 +460,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 12.0, 0.0, 0.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
@@ -470,11 +470,11 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                 options: FFButtonOptions(
                                   width: double.infinity,
                                   height: 44.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                                                    color: Color(0xFF827AE1),
+                                  color: const Color(0xFF827AE1),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -485,7 +485,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                         fontWeight: FontWeight.normal,
                                       ),
                                   elevation: 2.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
@@ -501,12 +501,12 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                       animationsMap['containerOnPageLoadAnimation1']!),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
                   child: Text(
                     'Captian Control',
                     style: FlutterFlowTheme.of(context).labelLarge.override(
                           fontFamily: 'Plus Jakarta Sans',
-                          color: Color(0xFF57636C),
+                          color: const Color(0xFF57636C),
                           fontSize: 16.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w500,
@@ -525,7 +525,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                     children: [
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 4.0, 0.0, 5.0),
                           child: ListView(
                             padding: EdgeInsets.zero,
@@ -534,12 +534,12 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                             scrollDirection: Axis.horizontal,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 0.0, 8.0),
                                 child: Container(
                                   width: 100.0,
                                   height: 50.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.white,
                                     boxShadow: [
                                       BoxShadow(
@@ -558,9 +558,9 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                       topRight: Radius.circular(12.0),
                                     ),
                                   ),
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -572,7 +572,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
-                                          Align(
+                                          const Align(
                                             alignment:
                                                 AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
@@ -588,7 +588,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                           ),
                                           Flexible(
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Text(
                                                 'Bus List',
@@ -611,12 +611,12 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                     'containerOnPageLoadAnimation2']!),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 0.0, 8.0),
                                 child: Container(
                                   width: 100.0,
                                   height: 50.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.white,
                                     boxShadow: [
                                       BoxShadow(
@@ -635,9 +635,9 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                       topRight: Radius.circular(12.0),
                                     ),
                                   ),
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -651,9 +651,9 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: FaIcon(
@@ -667,7 +667,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                           ),
                                           Flexible(
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Text(
                                                 'Fleet List',
@@ -690,12 +690,12 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                     'containerOnPageLoadAnimation3']!),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 0.0, 8.0),
                                 child: Container(
                                   width: 100.0,
                                   height: 50.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.white,
                                     boxShadow: [
                                       BoxShadow(
@@ -714,9 +714,9 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                       topRight: Radius.circular(12.0),
                                     ),
                                   ),
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -728,7 +728,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
-                                          Align(
+                                          const Align(
                                             alignment:
                                                 AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
@@ -744,7 +744,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                           ),
                                           Flexible(
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Text(
                                                 'Crew\'s member',
@@ -768,12 +768,12 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                     'containerOnPageLoadAnimation4']!),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 0.0, 8.0),
                                 child: Container(
                                   width: 100.0,
                                   height: 50.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.white,
                                     boxShadow: [
                                       BoxShadow(
@@ -792,18 +792,18 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                       topRight: Radius.circular(12.0),
                                     ),
                                   ),
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Flexible(
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 0.0, 0.0, 0.0),
                                               child: InkWell(
@@ -836,7 +836,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                                               .viewInsetsOf(
                                                                   context),
                                                           child:
-                                                              BottomSheetWidget(),
+                                                              const BottomSheetWidget(),
                                                         ),
                                                       );
                                                     },
@@ -857,7 +857,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                                         Flexible(
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Text(
                                               'All',
                                               style:
@@ -887,12 +887,12 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 0.0, 12.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 0.0, 12.0),
                   child: Text(
                     'Monitoring Statistics',
                     style: FlutterFlowTheme.of(context).labelLarge.override(
                           fontFamily: 'Plus Jakarta Sans',
-                          color: Color(0xFF57636C),
+                          color: const Color(0xFF57636C),
                           fontSize: 16.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w500,
@@ -909,7 +909,7 @@ class _CapHomePageWidgetState extends State<CapHomePageWidget>
                   child: wrapWithModel(
                     model: _model.moniStatCompoModel,
                     updateCallback: () => setState(() {}),
-                    child: MoniStatCompoWidget(),
+                    child: const MoniStatCompoWidget(),
                   ),
                 ),
                 Lottie.asset(

@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'select_verhicle_page_model.dart';
 export 'select_verhicle_page_model.dart';
 
@@ -53,7 +51,7 @@ class _SelectVerhiclePageWidgetState extends State<SelectVerhiclePageWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_rounded,
               color: Color(0xFF14181B),
               size: 30.0,
@@ -66,13 +64,13 @@ class _SelectVerhiclePageWidgetState extends State<SelectVerhiclePageWidget> {
             'Select verhicle',
             style: FlutterFlowTheme.of(context).headlineSmall.override(
                   fontFamily: 'Outfit',
-                  color: Color(0xFF14181B),
+                  color: const Color(0xFF14181B),
                   fontSize: 24.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w500,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -88,12 +86,12 @@ class _SelectVerhiclePageWidgetState extends State<SelectVerhiclePageWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
                     child: Text(
                       'You Verhicle now: ',
                       style: FlutterFlowTheme.of(context).labelMedium.override(
                             fontFamily: 'Plus Jakarta Sans',
-                            color: Color(0xFF57636C),
+                            color: const Color(0xFF57636C),
                             fontSize: 18.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.normal,
@@ -102,12 +100,12 @@ class _SelectVerhiclePageWidgetState extends State<SelectVerhiclePageWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 16.0, 0.0),
                     child: Text(
                       'Bus (1ABC-123)',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Plus Jakarta Sans',
-                            color: Color(0xFF14181B),
+                            color: const Color(0xFF14181B),
                             fontSize: 14.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.normal,
@@ -121,14 +119,14 @@ class _SelectVerhiclePageWidgetState extends State<SelectVerhiclePageWidget> {
                 children: [
                   Flexible(
                     child: Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             30.0, 20.0, 0.0, 0.0),
                         child: FlutterFlowDropDown<String>(
                           controller: _model.dropDownValueController ??=
                               FormFieldController<String>(null),
-                          options: [
+                          options: const [
                             'Bus (1ABC-123)',
                             'Bus (2ABC-456)',
                             'Bus (3ABC-789)',
@@ -157,7 +155,7 @@ class _SelectVerhiclePageWidgetState extends State<SelectVerhiclePageWidget> {
                           borderColor: FlutterFlowTheme.of(context).alternate,
                           borderWidth: 2.0,
                           borderRadius: 8.0,
-                          margin: EdgeInsetsDirectional.fromSTEB(
+                          margin: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 4.0, 16.0, 4.0),
                           hidesUnderline: true,
                           isOverButton: true,
@@ -171,10 +169,10 @@ class _SelectVerhiclePageWidgetState extends State<SelectVerhiclePageWidget> {
               ),
               Flexible(
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, 1.0),
+                  alignment: const AlignmentDirectional(0.0, 1.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed('DriverHomePage');
@@ -183,11 +181,11 @@ class _SelectVerhiclePageWidgetState extends State<SelectVerhiclePageWidget> {
                       options: FFButtonOptions(
                         width: 300.0,
                         height: 50.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFFFB300),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFFFB300),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Readex Pro',
@@ -195,7 +193,7 @@ class _SelectVerhiclePageWidgetState extends State<SelectVerhiclePageWidget> {
                                   letterSpacing: 0.0,
                                 ),
                         elevation: 3.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),

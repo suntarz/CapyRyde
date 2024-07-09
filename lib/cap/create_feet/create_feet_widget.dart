@@ -5,10 +5,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'create_feet_model.dart';
 export 'create_feet_model.dart';
 
@@ -73,11 +70,11 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                       letterSpacing: 0.0,
                     ),
               ),
-            ].divide(SizedBox(height: 4.0)),
+            ].divide(const SizedBox(height: 4.0)),
           ),
           actions: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 12.0, 8.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 12.0, 8.0),
               child: FlutterFlowIconButton(
                 borderColor: FlutterFlowTheme.of(context).alternate,
                 borderRadius: 12.0,
@@ -113,14 +110,14 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 770.0,
                             ),
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 16.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -198,7 +195,7 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                                       fillColor: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       contentPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               16.0, 20.0, 16.0, 20.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
@@ -285,7 +282,7 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                                       fillColor: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       contentPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               16.0, 16.0, 16.0, 16.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
@@ -312,7 +309,7 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                                         ),
                                   ),
                                   FlutterFlowChoiceChips(
-                                    options: [
+                                    options: const [
                                       ChipData('School'),
                                       ChipData('Condominium'),
                                       ChipData('Office'),
@@ -321,7 +318,7 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                                     onChanged: (val) => setState(() => _model
                                         .choiceChipsValue = val?.firstOrNull),
                                     selectedChipStyle: ChipStyle(
-                                      backgroundColor: Color(0xFFFFD54F),
+                                      backgroundColor: const Color(0xFFFFD54F),
                                       textStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -334,7 +331,7 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                                           .primaryText,
                                       iconSize: 18.0,
                                       elevation: 0.0,
-                                      borderColor: Color(0xFFFFB300),
+                                      borderColor: const Color(0xFFFFB300),
                                       borderWidth: 2.0,
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
@@ -385,7 +382,7 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                                     hoverColor: Colors.transparent,
                                     highlightColor: Colors.transparent,
                                     onTap: () async {
-                                      final _datePickedDate =
+                                      final datePickedDate =
                                           await showDatePicker(
                                         context: context,
                                         initialDate: getCurrentTimestamp,
@@ -431,12 +428,12 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                                         },
                                       );
 
-                                      if (_datePickedDate != null) {
+                                      if (datePickedDate != null) {
                                         safeSetState(() {
                                           _model.datePicked = DateTime(
-                                            _datePickedDate.year,
-                                            _datePickedDate.month,
-                                            _datePickedDate.day,
+                                            datePickedDate.year,
+                                            datePickedDate.month,
+                                            datePickedDate.day,
                                           );
                                         });
                                       }
@@ -460,7 +457,7 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                                             _model.dropDownValueController ??=
                                                 FormListFieldController<String>(
                                                     null),
-                                        options: [
+                                        options: const [
                                           'Bus1',
                                           'Bus2',
                                           'Bus3',
@@ -506,7 +503,7 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                                                 .alternate,
                                         borderWidth: 2.0,
                                         borderRadius: 8.0,
-                                        margin: EdgeInsetsDirectional.fromSTEB(
+                                        margin: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 4.0, 16.0, 4.0),
                                         hidesUnderline: true,
                                         isOverButton: true,
@@ -518,8 +515,8 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                                     ),
                                   ),
                                 ]
-                                    .divide(SizedBox(height: 12.0))
-                                    .addToEnd(SizedBox(height: 32.0)),
+                                    .divide(const SizedBox(height: 12.0))
+                                    .addToEnd(const SizedBox(height: 32.0)),
                               ),
                             ),
                           ),
@@ -529,13 +526,13 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                   ),
                 ),
                 Container(
-                  constraints: BoxConstraints(
+                  constraints: const BoxConstraints(
                     maxWidth: 770.0,
                   ),
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
                     child: FFButtonWidget(
                       onPressed: () {
                         print('Button pressed ...');
@@ -544,11 +541,11 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                       options: FFButtonOptions(
                         width: double.infinity,
                         height: 48.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFFFB300),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFFFB300),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Readex Pro',
@@ -556,7 +553,7 @@ class _CreateFeetWidgetState extends State<CreateFeetWidget> {
                                   letterSpacing: 0.0,
                                 ),
                         elevation: 3.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),

@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'feet_register_model.dart';
 export 'feet_register_model.dart';
 
@@ -53,7 +51,7 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_rounded,
               color: Color(0xFF14181B),
               size: 30.0,
@@ -66,13 +64,13 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
             'Register Feet ',
             style: FlutterFlowTheme.of(context).headlineSmall.override(
                   fontFamily: 'Outfit',
-                  color: Color(0xFF14181B),
+                  color: const Color(0xFF14181B),
                   fontSize: 24.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w500,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -83,7 +81,7 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 0.0),
                 child: TextFormField(
                   controller: _model.textController,
                   focusNode: _model.textFieldFocusNode,
@@ -94,49 +92,49 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
                     labelStyle:
                         FlutterFlowTheme.of(context).labelMedium.override(
                               fontFamily: 'Plus Jakarta Sans',
-                              color: Color(0xFF57636C),
+                              color: const Color(0xFF57636C),
                               fontSize: 14.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.normal,
                             ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xFFF1F4F8),
                         width: 2.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xFF4B39EF),
                         width: 2.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     errorBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xFFFF5963),
                         width: 2.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xFFFF5963),
                         width: 2.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     filled: true,
-                    fillColor: Color(0xFFF1F4F8),
-                    prefixIcon: Icon(
+                    fillColor: const Color(0xFFF1F4F8),
+                    prefixIcon: const Icon(
                       Icons.search_outlined,
                       color: Color(0xFF57636C),
                     ),
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Plus Jakarta Sans',
-                        color: Color(0xFF14181B),
+                        color: const Color(0xFF14181B),
                         fontSize: 14.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
@@ -152,12 +150,12 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
                     child: Text(
                       'Patients matching search',
                       style: FlutterFlowTheme.of(context).labelMedium.override(
                             fontFamily: 'Plus Jakarta Sans',
-                            color: Color(0xFF57636C),
+                            color: const Color(0xFF57636C),
                             fontSize: 14.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.normal,
@@ -166,12 +164,12 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 16.0, 0.0),
                     child: Text(
                       '...',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Plus Jakarta Sans',
-                            color: Color(0xFF14181B),
+                            color: const Color(0xFF14181B),
                             fontSize: 14.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.normal,
@@ -182,7 +180,7 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
               ),
               Theme(
                 data: ThemeData(
-                  checkboxTheme: CheckboxThemeData(
+                  checkboxTheme: const CheckboxThemeData(
                     visualDensity: VisualDensity.compact,
                     materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
@@ -217,7 +215,7 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
               ),
               Theme(
                 data: ThemeData(
-                  checkboxTheme: CheckboxThemeData(
+                  checkboxTheme: const CheckboxThemeData(
                     visualDensity: VisualDensity.compact,
                     materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
@@ -252,7 +250,7 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
               ),
               Theme(
                 data: ThemeData(
-                  checkboxTheme: CheckboxThemeData(
+                  checkboxTheme: const CheckboxThemeData(
                     visualDensity: VisualDensity.compact,
                     materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
@@ -287,7 +285,7 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
               ),
               Theme(
                 data: ThemeData(
-                  checkboxTheme: CheckboxThemeData(
+                  checkboxTheme: const CheckboxThemeData(
                     visualDensity: VisualDensity.compact,
                     materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
@@ -322,10 +320,10 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
               ),
               Flexible(
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, 1.0),
+                  alignment: const AlignmentDirectional(0.0, 1.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed('CrewHomePage');
@@ -334,11 +332,11 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
                       options: FFButtonOptions(
                         width: 300.0,
                         height: 50.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFFFB300),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFFFB300),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Readex Pro',
@@ -346,7 +344,7 @@ class _FeetRegisterWidgetState extends State<FeetRegisterWidget> {
                                   letterSpacing: 0.0,
                                 ),
                         elevation: 3.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),

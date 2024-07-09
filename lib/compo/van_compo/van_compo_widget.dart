@@ -1,12 +1,6 @@
-import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'van_compo_model.dart';
 export 'van_compo_model.dart';
 
@@ -43,7 +37,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 0.0),
       child: ListView(
         padding: EdgeInsets.zero,
         primary: false,
@@ -51,10 +45,10 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
         scrollDirection: Axis.vertical,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
             child: Container(
               width: 100.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
                   BoxShadow(
@@ -68,7 +62,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                 ],
               ),
               child: Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -87,7 +81,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Van',
@@ -95,7 +89,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Plus Jakarta Sans',
-                                    color: Color(0xFF4B39EF),
+                                    color: const Color(0xFF4B39EF),
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
@@ -103,13 +97,13 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 4.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     '(123) 456-7890',
@@ -117,7 +111,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                                         .labelMedium
                                         .override(
                                           fontFamily: 'Plus Jakarta Sans',
-                                          color: Color(0xFF57636C),
+                                          color: const Color(0xFF57636C),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -125,7 +119,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Randy Rudolph',
@@ -133,7 +127,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                                         .bodyLarge
                                         .override(
                                           fontFamily: 'Plus Jakarta Sans',
-                                          color: Color(0xFF14181B),
+                                          color: const Color(0xFF14181B),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -148,12 +142,12 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                     ),
                     Card(
                       clipBehavior: Clip.antiAliasWithSaveLayer,
-                      color: Color(0xFFF1F4F8),
+                      color: const Color(0xFFF1F4F8),
                       elevation: 1.0,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(40.0),
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.all(4.0),
                         child: Icon(
                           Icons.keyboard_arrow_right_rounded,
@@ -168,10 +162,10 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
             child: Container(
               width: 100.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
                   BoxShadow(
@@ -185,7 +179,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                 ],
               ),
               child: Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -204,7 +198,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Van 2',
@@ -212,7 +206,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Plus Jakarta Sans',
-                                    color: Color(0xFF4B39EF),
+                                    color: const Color(0xFF4B39EF),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
@@ -220,13 +214,13 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 4.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     '(123) 456-7890',
@@ -234,7 +228,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                                         .labelMedium
                                         .override(
                                           fontFamily: 'Plus Jakarta Sans',
-                                          color: Color(0xFF57636C),
+                                          color: const Color(0xFF57636C),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -242,7 +236,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Randie Mcmullens',
@@ -250,7 +244,7 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                                         .bodyLarge
                                         .override(
                                           fontFamily: 'Plus Jakarta Sans',
-                                          color: Color(0xFF14181B),
+                                          color: const Color(0xFF14181B),
                                           fontSize: 16.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -265,12 +259,12 @@ class _VanCompoWidgetState extends State<VanCompoWidget>
                     ),
                     Card(
                       clipBehavior: Clip.antiAliasWithSaveLayer,
-                      color: Color(0xFFF1F4F8),
+                      color: const Color(0xFFF1F4F8),
                       elevation: 1.0,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(40.0),
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.all(4.0),
                         child: Icon(
                           Icons.keyboard_arrow_right_rounded,

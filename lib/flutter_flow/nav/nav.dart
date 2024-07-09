@@ -1,17 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 
 import '/index.dart';
-import '/main.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -36,107 +29,107 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => LoginPageWidget(),
+      errorBuilder: (context, state) => const LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => LoginPageWidget(),
+          builder: (context, _) => const LoginPageWidget(),
         ),
         FFRoute(
           name: 'LoginPage',
           path: '/loginPage',
-          builder: (context, params) => LoginPageWidget(),
+          builder: (context, params) => const LoginPageWidget(),
         ),
         FFRoute(
           name: 'Register_page',
           path: '/registerPage',
-          builder: (context, params) => RegisterPageWidget(),
+          builder: (context, params) => const RegisterPageWidget(),
         ),
         FFRoute(
           name: 'Buslist',
           path: '/buslist',
-          builder: (context, params) => BuslistWidget(),
+          builder: (context, params) => const BuslistWidget(),
         ),
         FFRoute(
           name: 'Cap_homePage',
           path: '/capHomePage',
-          builder: (context, params) => CapHomePageWidget(),
+          builder: (context, params) => const CapHomePageWidget(),
         ),
         FFRoute(
           name: 'CreateBus',
           path: '/createBus',
-          builder: (context, params) => CreateBusWidget(),
+          builder: (context, params) => const CreateBusWidget(),
         ),
         FFRoute(
           name: 'CreateFeet',
           path: '/createFeet',
-          builder: (context, params) => CreateFeetWidget(),
+          builder: (context, params) => const CreateFeetWidget(),
         ),
         FFRoute(
           name: 'EditBus',
           path: '/editBus',
-          builder: (context, params) => EditBusWidget(),
+          builder: (context, params) => const EditBusWidget(),
         ),
         FFRoute(
           name: 'editProfile',
           path: '/editProfile',
-          builder: (context, params) => EditProfileWidget(),
+          builder: (context, params) => const EditProfileWidget(),
         ),
         FFRoute(
           name: 'FeetList',
           path: '/feetList',
-          builder: (context, params) => FeetListWidget(),
+          builder: (context, params) => const FeetListWidget(),
         ),
         FFRoute(
           name: 'ParticipationRequestlist',
           path: '/participationRequestlist',
-          builder: (context, params) => ParticipationRequestlistWidget(),
+          builder: (context, params) => const ParticipationRequestlistWidget(),
         ),
         FFRoute(
           name: 'DriverHomePage',
           path: '/driverHomePage',
-          builder: (context, params) => DriverHomePageWidget(),
+          builder: (context, params) => const DriverHomePageWidget(),
         ),
         FFRoute(
           name: 'selectVerhiclePage',
           path: '/selectVerhiclePage',
-          builder: (context, params) => SelectVerhiclePageWidget(),
+          builder: (context, params) => const SelectVerhiclePageWidget(),
         ),
         FFRoute(
           name: 'CrewHomePage',
           path: '/crewHomePage',
-          builder: (context, params) => CrewHomePageWidget(),
+          builder: (context, params) => const CrewHomePageWidget(),
         ),
         FFRoute(
           name: 'FeetRegister',
           path: '/feetRegister',
-          builder: (context, params) => FeetRegisterWidget(),
+          builder: (context, params) => const FeetRegisterWidget(),
         ),
         FFRoute(
           name: 'Van-list',
           path: '/vanList',
-          builder: (context, params) => VanListWidget(),
+          builder: (context, params) => const VanListWidget(),
         ),
         FFRoute(
           name: 'kra-porList',
           path: '/kraPorList',
-          builder: (context, params) => KraPorListWidget(),
+          builder: (context, params) => const KraPorListWidget(),
         ),
         FFRoute(
           name: 'CrewMember',
           path: '/crewMember',
-          builder: (context, params) => CrewMemberWidget(),
+          builder: (context, params) => const CrewMemberWidget(),
         ),
         FFRoute(
           name: 'selectRole',
           path: '/selectRole',
-          builder: (context, params) => SelectRoleWidget(),
+          builder: (context, params) => const SelectRoleWidget(),
         ),
         FFRoute(
           name: 'selectFleet',
           path: '/selectFleet',
-          builder: (context, params) => SelectFleetWidget(),
+          builder: (context, params) => const SelectFleetWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -300,7 +293,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

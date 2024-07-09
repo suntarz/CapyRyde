@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'crew_home_page_model.dart';
 export 'crew_home_page_model.dart';
 
@@ -45,15 +43,15 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFFF1F5F8),
+          backgroundColor: const Color(0xFFF1F5F8),
           automaticallyImplyLeading: false,
           title: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
             child: Text(
               'Crew Home Page',
               style: FlutterFlowTheme.of(context).labelMedium.override(
                     fontFamily: 'Plus Jakarta Sans',
-                    color: Color(0xFF57636C),
+                    color: const Color(0xFF57636C),
                     fontSize: 14.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.w500,
@@ -62,14 +60,14 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
           ),
           actions: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 16.0, 0.0),
               child: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 50.0,
-                fillColor: Color(0xFFF1F5F8),
-                icon: Icon(
+                fillColor: const Color(0xFFF1F5F8),
+                icon: const Icon(
                   Icons.notifications_none,
                   color: Color(0xFF57636C),
                   size: 24.0,
@@ -88,65 +86,68 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
           child: SingleChildScrollView(
             primary: false,
             child: Column(
-              mainAxisSize: MainAxisSize.min, // Set mainAxisSize to min
+              mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            16.0, 12.0, 0.0, 0.0),
-                        child: Text(
-                          'Welcome ',
-                          style: FlutterFlowTheme.of(context)
-                              .displaySmall
-                              .override(
-                                fontFamily: 'Outfit',
-                                color: Color(0xFF0F1113),
-                                fontSize: 24.0,
-                                letterSpacing: 0.0,
-                                fontWeight: FontWeight.bold,
-                              ),
+                Flexible(
+                  child: Align(
+                    alignment: const AlignmentDirectional(0.0, 0.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              16.0, 12.0, 0.0, 0.0),
+                          child: Text(
+                            'Welcome ',
+                            style: FlutterFlowTheme.of(context)
+                                .displaySmall
+                                .override(
+                                  fontFamily: 'Outfit',
+                                  color: const Color(0xFF0F1113),
+                                  fontSize: 24.0,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                          ),
                         ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            5.0, 12.0, 0.0, 0.0),
-                        child: Text(
-                          'Gibbs',
-                          style: FlutterFlowTheme.of(context)
-                              .displaySmall
-                              .override(
-                                fontFamily: 'Outfit',
-                                color: Color(0xFFD89D12),
-                                fontSize: 24.0,
-                                letterSpacing: 0.0,
-                                fontWeight: FontWeight.w500,
-                              ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              5.0, 12.0, 0.0, 0.0),
+                          child: Text(
+                            'Gibbs',
+                            style: FlutterFlowTheme.of(context)
+                                .displaySmall
+                                .override(
+                                  fontFamily: 'Outfit',
+                                  color: const Color(0xFFD89D12),
+                                  fontSize: 24.0,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                          ),
                         ),
-                      ),
-                      Flexible(
-                        child: Align(
-                          alignment: AlignmentDirectional(1.0, 0.0),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 28.0, 0.0),
-                            child: Icon(
-                              Icons.settings_outlined,
-                              color: FlutterFlowTheme.of(context).secondaryText,
-                              size: 24.0,
+                        Flexible(
+                          child: Align(
+                            alignment: const AlignmentDirectional(1.0, 0.0),
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 28.0, 0.0),
+                              child: Icon(
+                                Icons.settings_outlined,
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                size: 24.0,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
                     child: Image.asset(
@@ -157,33 +158,37 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                     ),
                   ),
                 ),
-                Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
-                  child: Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                    child: Text(
-                      'Your feet : Khet Phasi Charoen',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
-                            color: Colors.black,
-                            letterSpacing: 0.0,
-                          ),
+                Flexible(
+                  child: Align(
+                    alignment: const AlignmentDirectional(0.0, 0.0),
+                    child: Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                      child: Text(
+                        'Your feet : Khet Phasi Charoen',
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Readex Pro',
+                              color: Colors.black,
+                              letterSpacing: 0.0,
+                            ),
+                      ),
                     ),
                   ),
                 ),
-                Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
-                  child: Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                    child: Text(
-                      'The nearby bus',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
-                            color: Colors.black,
-                            letterSpacing: 0.0,
-                          ),
+                Flexible(
+                  child: Align(
+                    alignment: const AlignmentDirectional(0.0, 0.0),
+                    child: Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                      child: Text(
+                        'The nearby bus',
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Readex Pro',
+                              color: Colors.black,
+                              letterSpacing: 0.0,
+                            ),
+                      ),
                     ),
                   ),
                 ),
@@ -193,7 +198,7 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                   scrollDirection: Axis.vertical,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: FlutterFlowRadioButton(
                         options: [
                           'Bus 1 - Empty seats 10 | 1.1 KM away from you',
@@ -227,10 +232,10 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                   ],
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 24.0),
                     child: FFButtonWidget(
                       onPressed: () {
                         print('ButtonPrimary pressed ...');
@@ -240,10 +245,10 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                         width: 300.0,
                         height: 60.0,
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFFFB300),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFFFB300),
                         textStyle:
                             FlutterFlowTheme.of(context).headlineSmall.override(
                                   fontFamily: 'Outfit',
@@ -253,7 +258,7 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                                   fontWeight: FontWeight.w600,
                                 ),
                         elevation: 3.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
@@ -263,10 +268,10 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed('FeetRegister');
@@ -276,10 +281,10 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                         width: 300.0,
                         height: 60.0,
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFFFB300),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFFFB300),
                         textStyle:
                             FlutterFlowTheme.of(context).headlineSmall.override(
                                   fontFamily: 'Outfit',
@@ -289,7 +294,7 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                                   fontWeight: FontWeight.w600,
                                 ),
                         elevation: 3.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
@@ -302,12 +307,12 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                   opacity: 0.0,
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x34111417),
@@ -321,14 +326,14 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                       ),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                         child: Column(
-                          mainAxisSize: MainAxisSize.min, // Set mainAxisSize to min
+                          mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 12.0, 0.0),
                               child: Theme(
                                 data: ThemeData(
@@ -337,7 +342,7 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                                       borderRadius: BorderRadius.circular(25),
                                     ),
                                   ),
-                                  unselectedWidgetColor: Color(0xFF57636C),
+                                  unselectedWidgetColor: const Color(0xFF57636C),
                                 ),
                                 child: CheckboxListTile(
                                   value: _model.checkboxListTileValue ??= false,
@@ -361,19 +366,19 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                                         .headlineSmall
                                         .override(
                                           fontFamily: 'Outfit',
-                                          color: Color(0xFF14181B),
+                                          color: const Color(0xFF14181B),
                                           fontSize: 15.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
                                         ),
                                   ),
-                                  tileColor: Color(0xFFF1F4F8),
-                                  activeColor: Color(0xFF4B39EF),
+                                  tileColor: const Color(0xFFF1F4F8),
+                                  activeColor: const Color(0xFF4B39EF),
                                   checkColor: Colors.white,
                                   dense: false,
                                   controlAffinity:
                                       ListTileControlAffinity.trailing,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                     borderRadius: BorderRadius.only(
                                       bottomLeft: Radius.circular(0.0),
                                       bottomRight: Radius.circular(0.0),
@@ -385,29 +390,29 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 12.0, 0.0, 12.0),
                               child: Column(
-                                mainAxisSize: MainAxisSize.min, // Set mainAxisSize to min
+                                mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Container(
                                     width: 64.0,
                                     height: 64.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFFFD54F),
+                                      color: const Color(0xFFFFD54F),
                                       shape: BoxShape.circle,
                                       border: Border.all(
-                                        color: Color(0xFFD89D12),
+                                        color: const Color(0xFFD89D12),
                                         width: 2.0,
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(4.0),
+                                      padding: const EdgeInsets.all(4.0),
                                       child: Container(
                                         width: 70.0,
                                         height: 70.0,
                                         clipBehavior: Clip.antiAlias,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
                                         child: Image.network(
