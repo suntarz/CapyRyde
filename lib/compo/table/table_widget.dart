@@ -236,20 +236,6 @@ class _TableWidgetState extends State<TableWidget> {
                                     children: [
                                       Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 8.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(40.0),
-                                          child: Image.network(
-                                            'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                            width: 32.0,
-                                            height: 32.0,
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             4.0, 0.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -259,7 +245,7 @@ class _TableWidgetState extends State<TableWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'Randy Peterson',
+                                              '1',
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
@@ -411,20 +397,6 @@ class _TableWidgetState extends State<TableWidget> {
                                     children: [
                                       Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 8.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(40.0),
-                                          child: Image.network(
-                                            'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                            width: 32.0,
-                                            height: 32.0,
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             4.0, 0.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -434,7 +406,7 @@ class _TableWidgetState extends State<TableWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'Randy Peterson',
+                                              '2',
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
@@ -586,20 +558,6 @@ class _TableWidgetState extends State<TableWidget> {
                                     children: [
                                       Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 8.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(40.0),
-                                          child: Image.network(
-                                            'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                            width: 32.0,
-                                            height: 32.0,
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             4.0, 0.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -609,7 +567,7 @@ class _TableWidgetState extends State<TableWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'Randy Peterson',
+                                              '3',
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
