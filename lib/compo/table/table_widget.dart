@@ -360,7 +360,7 @@ class _TableWidgetState extends State<TableWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 0.0),
                                           child: Text(
-                                            'Check-in',
+                                            'Riding',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -535,7 +535,7 @@ class _TableWidgetState extends State<TableWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 0.0),
                                           child: Text(
-                                            'Check-out',
+                                            'Done',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -710,7 +710,7 @@ class _TableWidgetState extends State<TableWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 0.0),
                                           child: Text(
-                                            'Check-out',
+                                            'Done',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(

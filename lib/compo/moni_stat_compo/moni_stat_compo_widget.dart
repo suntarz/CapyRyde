@@ -324,7 +324,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 12.0, 0.0),
                                         child: Text(
-                                          '23',
+                                          '<>',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -501,7 +501,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 12.0, 0.0),
                                         child: Text(
-                                          '10',
+                                          '<>',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -678,7 +678,7 @@ class _MoniStatCompoWidgetState extends State<MoniStatCompoWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 12.0, 0.0),
                                         child: Text(
-                                          '12',
+                                          '<>',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(

@@ -126,36 +126,40 @@ class _CrewHomePageWidgetState extends State<CrewHomePageWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Container(
-                    width: double.infinity,
-                    height: 378.0,
-                    decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
-                    ),
-                    child: FlutterFlowGoogleMap(
-                      controller: _model.googleMapsController,
-                      onCameraIdle: (latLng) => _model.googleMapsCenter = ff.LatLng(latLng.latitude, latLng.longitude),
-                      initialLocation: _model.googleMapsCenter ?? ff.LatLng(13.736717, 100.523186), // กรุงเทพมหานคร
-                      markerColor: GoogleMarkerColor.violet,
-                      mapType: MapType.normal,
-                      style: GoogleMapStyle.standard,
-                      initialZoom: 14.0,
-                      allowInteraction: true,
-                      allowZoom: true,
-                      showZoomControls: true,
-                      showLocation: true,
-                      showCompass: false,
-                      showMapToolbar: false,
-                      showTraffic: false,
-                      centerMapOnMarkerTap: true,
-),
-                  ),
+                          width: 402.0,
+                          height: 591.0,
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context).secondaryBackground,
+                          ),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            child: FlutterFlowGoogleMap(
+                              controller: _model.googleMapsController,
+                              onCameraIdle: (latLng) => _model.googleMapsCenter = latLng,
+                              initialLocation: _model.googleMapsCenter ??=
+                                  LatLng(13.106061, -59.613158),
+                              markerColor: GoogleMarkerColor.violet,
+                              mapType: MapType.normal,
+                              style: GoogleMapStyle.standard,
+                              initialZoom: 14.0,
+                              allowInteraction: true,
+                              allowZoom: true,
+                              showZoomControls: true,
+                              showLocation: true,
+                              showCompass: false,
+                              showMapToolbar: false,
+                              showTraffic: false,
+                              centerMapOnMarkerTap: true,
+                            ),
+                          ),
+                  )   
                 ),
                 Align(
                   alignment: AlignmentDirectional(0.0, 0.0),
                   child: Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 10.0),
                     child: Text(
-                      'Your feet : Khet Phasi Charoen',
+                      'Your fleet : <FLEET NOW>',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
                             color: Colors.black,

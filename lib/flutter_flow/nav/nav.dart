@@ -12,6 +12,7 @@ import '/flutter_flow/lat_lng.dart';
 import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'serialization_util.dart';
+import '../../screen/map_screen.dart'; // Import MapScreen
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -137,7 +138,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'selectFleet',
           path: '/selectFleet',
           builder: (context, params) => SelectFleetWidget(),
-        )
+        ),
+        FFRoute(
+          name: 'map', // Add the name for the map route
+          path: '/map',
+          builder: (context, params) => MapScreen(),
+        ),
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
 

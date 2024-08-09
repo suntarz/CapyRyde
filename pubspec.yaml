@@ -66,6 +66,13 @@ dependencies:
   permission_handler: ^10.2.0
   geolocator: ^9.0.0
 
+  http: ^0.13.3
+  uuid: ^3.0.4
+  fbroadcast: ^2.0.0
+  socket_io_client: ^2.0.3+1
+  
+  simple_kalman: ^1.0.2
+  # flutter_dotenv: ^5.0.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -103,6 +110,8 @@ flutter:
     - assets/lottie_animations/
     - assets/rive_animations/
     - assets/pdfs/
+    - assets/car.png
+    - assets/me.png
 
   
   # An image asset can refer to one or more resolution-specific "variants", see
